@@ -1,0 +1,329 @@
+:root {
+  --main-tra: 0.5s;
+  --main-col: rgb(66, 189, 237);
+  --hover-col: rgb(32, 90, 137);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+body {
+  font-family: "Almarai", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  display: block;
+}
+/* main classes */
+.container {
+  width: 1200px;
+  padding: 25px 35px;
+  margin: auto;
+}
+.content {
+  margin-bottom: 400px;
+}
+
+/*  header */
+.first {
+  background: url("../photos/banner-inner2.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.first::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.first .container .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.first .container .head .logo {
+  width: 200px;
+}
+.first .container .head .logo img {
+  max-width: 100%;
+}
+.first .container .head .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+}
+.first .container .head .links a {
+  padding: 20px 5px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+}
+.first .container .head .links .but {
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 20px;
+  background-color: var(--main-col);
+  border-radius: 500px;
+}
+.first .container .head .links a:hover {
+  color: rgb(66, 189, 237);
+}
+.first .container .head .links .but:hover {
+  background-color: var(--hover-col);
+  color: white;
+}
+.first .container .text {
+  margin: 20px 0px;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+.first .container .text h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.first .container .text .hh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  direction: rtl;
+}
+.first .container .text .hh p:first-of-type i {
+  color: rgb(66, 189, 237);
+  margin-left: 2px;
+}
+.first .container .text .hh a {
+  color: white;
+  font-weight: bold;
+}
+.first .container .text .hh p:last-of-type span {
+  color: rgb(66, 189, 237);
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+/* Count */
+.cot {
+  padding: 40px 0px;
+  background-color: rgb(241, 241, 241);
+}
+.cot .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.cot .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 90px;
+  text-align: center;
+}
+.cot .container .box i {
+  font-size: 60px;
+  color: rgb(138, 179, 203);
+}
+.cot .container .box h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(47, 57, 69);
+}
+.cot .container .box p {
+  color: rgb(105, 112, 120);
+}
+.cot-end {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+}
+
+/* Doctors */
+.doc {
+  background-color: rgb(249, 249, 249);
+  padding: 80px 0px;
+}
+.doc .container .tex {
+  direction: rtl;
+  margin-bottom: 80px;
+}
+.doc .container .tex p:first-of-type {
+  color: rgb(179, 172, 177);
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.doc .container .tex p:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--main-col);
+  right: 90px;
+  top: calc(50% - 1.5px);
+}
+.doc .container .tex h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.doc .container .tex h3 span {
+  color: var(--main-col);
+}
+.doc .container .tex p:last-of-type {
+  color: rgba(47, 57, 69, 0.7);
+}
+.doc .container .dr {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+}
+.doc .container .dr .box {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+}
+.doc .container .dr .box .ig img {
+  max-width: 100%;
+}
+.doc .container .dr .box .if {
+  padding: 25px;
+  text-align: right;
+}
+.doc .container .dr .box .if h3 {
+  color: #2f3945;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px 0px 10px;
+}
+.doc .container .dr .box .if p {
+  color: var(--main-col);
+  margin-bottom: 10px;
+}
+.doc .container .dr .box .if ul {
+  direction: rtl;
+  height: 200px;
+}
+.doc .container .dr .box .if li {
+  margin-right: 20px;
+  color: rgb(47, 57, 69, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.doc .container .caus {
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 25px;
+  width: 120px;
+  text-align: center;
+  border-radius: 500px;
+  margin: 60px auto 0px;
+  color: white;
+}
+
+/* Footer */
+.fo {
+  background: url("../photos/footer-background.jpg") bottom center no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 80px 0px;
+  direction: rtl;
+}
+.fo .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.fo .container .box {
+  width: 400px;
+}
+.fo .container .box .he {
+  font-size: 25px;
+  color: rgb(65, 74, 69);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.fo .container .box .inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+.fo .container .box .inf .lie {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-content: center;
+}
+.fo .container .box .inf .lie a,
+.fo .container .box .inf .lie i {
+  direction: ltr;
+  color: rgb(99, 106, 116);
+}
+.fo .container .box .inf ul {
+  list-style-type: none;
+}
+
+.fo .container .box .inf ul li {
+  margin-bottom: 10px;
+}
+.fo .container .box .inf li i {
+  transform: rotate(180deg);
+  margin-left: 10px;
+  color: rgb(92, 99, 108);
+}
+.fo .container .box .inf ul li a {
+  color: rgb(92, 99, 108);
+  display: inline;
+  margin-right: 5px;
+}
+.fo .container .box:last-child .he {
+  margin-bottom: 5px;
+}
+.fo .container .box:last-child .he img {
+  max-width: 200px;
+}
+.fo .container .box:last-child .inf {
+  color: rgb(47, 57, 69);
+  margin: 0;
+}
+/* Back to Top button */
+#top {
+  opacity: 0;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 2;
+  font-size: 25px;
+  border: none;
+  background-color: #42bded;
+  color: white;
+  border-radius: 50%;
+  transition: opacity 0.5s;
+}
+#top:hover {
+  cursor: pointer;
+  background-color: var(--hover-col);
+}

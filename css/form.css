@@ -1,0 +1,143 @@
+
+*{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    background-color: red;
+}
+body{
+    height: 100vh;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: white;
+   background-size: cover;
+   position: relative;
+}
+body::after{
+    content: " ";
+    width: 400px;
+    height: 600px;
+    clip-path: circle(50% at 100% 0);
+   background-color: #0d6efd;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+body::before{
+    content: " ";
+    width: 400px;
+    height: 600px;
+    clip-path: circle(47.8% at 12% 91%);
+   background-color: #0d6efd;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+.fo{
+    background-color: white;
+    width: 25%;
+    height: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease all;
+}
+.fo p{
+    margin-top: 10px;
+}
+.warn{
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.fo input{
+    background-color: rgba(255, 255, 255, 0.103);
+    color: rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+    transition: 0.3s ease all;
+}
+.f2 input
+{
+    background-color: rgba(255, 255, 255, 0.103);
+    color: rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+    transition: 0.3s ease all; 
+}
+
+.fo input:focus{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.fo input::placeholder{
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 55%;
+    border-radius: 20px;
+}
+.warn{
+    color: rgba(255, 255, 255, 0.432);
+}
+.forget{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    padding-bottom: 5px;
+    color: #0d6efd;
+}
+@media (max-width: 976px) {
+    .fo{
+      width: 60%;
+        
+    }
+}
+@media (max-width: 383px) {
+    .fo{
+      width: 80%;
+        
+    }
+}
+.f2{
+    background-color: white;
+    width: 25%;
+    height: 37%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease all;
+    display: none;
+}
+.f2 p{
+    margin-top: 10px;
+}
+.f2 .inputs{
+height: 70%;
+}
+@media (max-width: 976px) {
+    .f2{
+      width: 60%;
+        
+    }
+}
+@media (max-width: 383px) {
+    .f2{
+      width: 80%;
+        
+    }
+}
